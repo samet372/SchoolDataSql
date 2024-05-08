@@ -21,7 +21,7 @@ CREATE TABLE grades (<br>
 );<br>
 <br>
 <br>
-#Update<br>
+# Update<br>
 CREATE TABLE course_average (<br>
     id SERIAL PRIMARY KEY,<br>
     course_code VARCHAR(255) UNIQUE,<br>
