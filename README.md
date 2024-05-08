@@ -16,7 +16,7 @@ CREATE TABLE courses (<br>
 CREATE TABLE grades (<br>
     student_id INTEGER REFERENCES students(student_id),<br>
     course_code VARCHAR(20) REFERENCES courses(course_code),<br>
-    grade NUMERIC(3, 2) NOT NULL,<br>
+    grade DECIMAL NOT NULL,<br>
     PRIMARY KEY (student_id, course_code)<br>
 );<br>
 <br>
