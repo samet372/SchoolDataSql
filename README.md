@@ -19,5 +19,14 @@ CREATE TABLE grades (<br>
     grade NUMERIC(3, 2) NOT NULL,<br>
     PRIMARY KEY (student_id, course_code)<br>
 );<br>
+<br>
+<br>
+#Update<br>
+CREATE TABLE course_average (<br>
+    id SERIAL PRIMARY KEY,<br>
+    course_code VARCHAR(255) UNIQUE,<br>
+    average_grade DECIMAL,<br>
+    FOREIGN KEY (course_code) REFERENCES courses(course_code)<br>
+);<br>
 
 -----------------------------------------------
